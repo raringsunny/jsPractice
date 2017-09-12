@@ -1,5 +1,6 @@
-//Rewrote the program to calculate sum of numbers passed to program.
+//Rewrote the program to calculate sum of numbers passed to program
 //Ignores new line characters passed and empty comma separated values
+//adding a comment to test Github & Slack integration
 
 console.log(add(process.argv[2]));
 
