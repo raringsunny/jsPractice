@@ -6,10 +6,19 @@ var Person = function(name, age){
         this.street = street;
         this.zipcode = zipcode;
     }
+
+    this.Address = new Address(this.street, this.zipcode);
 }
 
 function main(){
-    var p = new Person("Manoj", 100);
+    var manoj = new Person("Manoj Mohan", 100);
 
-    p.Address = new Address("Sector 8", "Panchkula");
+    manoj.Address.street = "Sector 8";
+    manoj.Address.zipcode = 134109;
+
+    console.log(manoj.Address.street);
+    console.log(manoj.Address.zipcode);
+    
 }
+
+main();
