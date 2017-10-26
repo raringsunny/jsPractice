@@ -11,13 +11,13 @@ var Person = function(name, age){
 }
 
 function main(){
-    var manoj = new Person("Manoj Mohan", 100);
+    var p = new Person("Manoj", 100);
 
-    manoj.Address.street = "Sector 8";
-    manoj.Address.zipcode = 134109;
+    p.Address.street = "Sector 8";
+    p.Address.zipcode = 134109;
 
-    console.log(manoj.Address.street);
-    console.log(manoj.Address.zipcode);
+    console.log("Name = " + p.name + ", age = " + p.age + 
+        ", Address = " + p.Address.street + ", Zipcode = " + p.Address.zipcode);
     
 }
 
